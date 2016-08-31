@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>easeWave</title>
+    <meta property=og:title content="easeWave"/>
+    <meta name=description content="freshen up your brain!"/>
+    <meta property=og:description content="freshen up your brain!"/>
+    <meta property=og:image content="../img/logoicon.png"/>
+    <meta content="../img/logoicon.png">
+    <meta name="keywords"
+          content="easewave, ease, wave, freshen, up, your, brain, scripture, happiness, depression, heal,
+          thinking, mind, christian, help, daily, healing, thoughts, positive, positiv, Bible,
+          fear, quote, quotes, thinking positive, think positively,
+          positive thinking, change think positive, how to think positive when depressed,
+          how to think positive and be happy, positive thoughts, power of positive thinking,
+          power of positive thinking quotes, positive attitude quotes, positive quotes,
+          positive thoughts quotes, positive quotes for the day, quotes about positive attitude,
+          think positive thoughts every day">
+    <link rel="alternative" href="android-app://com.jonathansautter.easewave/http/easewave.com"/>
+    <link rel="shortcut icon" href="../img/favicon16.ico"/>
+    <link rel=icon href="../img/favicon16.ico"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../wowslider/engine1/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../wowslider/engine2/style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="../css/reset.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="../css/material.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../css/mdl-jquery-modal-dialog.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="../css/tiles.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="../css/style_2.css" rel="stylesheet" type="text/css"/>
+    <!--[if gt IE 8]><!-->
+    <link href="../css/retina-responsive.css" rel="stylesheet" type="text/css" media="screen"/><!--<![endif]-->
+    <!--[if !IE]><!-->
+    <link href="../css/retina-responsive.css" rel="stylesheet" type="text/css" media="screen"/> <!--[endif]-->
+    <script>(function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-20727484-5', 'easewave.com');
+    ga('send', 'pageview');</script>
+</head>
+<body>
+<!-- Start AppBar-->
+<div class="appbar" data-scroll="true">
+    <ul class="mainmenu">
+        <li>free easeWave App</li>
+        <li>
+            <button onclick="downloadApp()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect download">
+                Download
+            </button>
+        </li>
+        <li class="right unselectable">
+            <button onclick="hideAndroidAppHint()" class="mdl-button mdl-js-button mdl-button--icon closex">
+                <i class="material-icons">close</i>
+            </button>
+        </li>
+    </ul>
+</div>
+<!-- End AppBar -->
+
+<!-- Start Hero -->
+<div class="home hero">
+    <div class="overlay"></div>
+    <div id="hideall">
+        <!--<div class="mdl-spinner center-spinner mdl-spinner&#45;&#45;single-color mdl-js-spinner is-active"></div>-->
+        <div class="loader center-spinner">
+            <svg class="circular is-active">
+                <circle class="path is-active" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+            </svg>
+        </div>
+        <div class="darker"></div>
+        <div class="herowrapper">
+            <!--Todays Quote-->
+            <h1 id="myResults"></h1>
+
+            <h2 id="myResultssource"></h2>
+        </div>
+
+        <!--BrowseQuotes-->
+        <div class="content browse">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable searchbar" id="searchbar">
+                <label class="mdl-button mdl-js-button mdl-button--icon" id="search-icon" for="search-expandable">
+                    <i class="material-icons white">search</i>
+                </label>
+                <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input mdl-color-text--white" type="text" id="search-expandable">
+                    <label class="mdl-textfield__label" for="search-expandable">Search text</label>
+                </div>
+                <label class="mdl-button mdl-js-button mdl-button--icon" id="search-close">
+                    <i class="material-icons white">close</i>
+                </label>
+            </div>
+            <div id="content">
+                <div class="container clearfix">
+                    <div id="container"></div>
+                    <div id="containerisotope-search"></div>
+                    <div id="containerisotope"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--About-->
+        <div class="content about card">
+            <h1 class="unselectable">We are what we <b class="rotate color">think,speak,believe</b>.</h1>
+
+            <div class="content">
+                <p class="main dark-gray">Our happiness depends on our thoughts. We have about 60.000 thoughts a day. But only 3% of
+                    them are constructive/positive! But we can choose to be happy by practicing positive thinking. All the bad news,
+                    fears, stress and pressure around us often lead to negative thinking and depression. This easily becomes a habit
+                    and heavily affects our happiness. According to the scientists 87% of all diseases are related to thought
+                    patterns.<br><br>
+                    The only way to get rid of this bad mindset is to change your thinking! You have to learn to think positive
+                    again. Those new thoughts have to strike roots in your thinking.<br><br>
+                    This app helps you to do so! It provides a scripture or quote picked by our little team for each day. By
+                    reading the good words, thinking about them and maybe also meditate on them you can plant positive thoughts into
+                    your brain.<br><br>
+                    Re-establish your happy thinking by the living word of Christ.<br><br>
+                    <i>"Our happiness depends on the habit of mind we cultivate. So practice happy thinking every day. Cultivate the
+                        merry heart, develop the happiness habit, and life will become a continual feast."</i> -NORMAN VINCENT PEALE
+                </p>
+            </div>
+        </div>
+
+        <!--Contact-->
+        <div class="content contact card">
+            <h1>Any questions? Contact me!</h1>
+
+            <p class="main dark-gray cont">
+                I'd like to hear your feedback.
+            </p>
+
+            <form method="post" action="../php/contact.php" name="contactform" id="contactform" autocomplete="off">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label contact-input">
+                    <input class="mdl-textfield__input" name="name" type="text" id="name">
+                    <label class="mdl-textfield__label" for="name">Name</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label contact-input">
+                    <input class="mdl-textfield__input" name="email" type="text" id="email" size="30">
+                    <label class="mdl-textfield__label" for="email">E-Mail</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield contact-input">
+                    <textarea class="mdl-textfield__input" rows="4" name="comments" id="comments"></textarea>
+                    <label class="mdl-textfield__label" id="message_label" for="comments">Message</label>
+                </div>
+                <input id="submitcontact" name="submit" type="submit" value="">
+            </form>
+        </div>
+
+        <!--Submit Quote-->
+        <div class="content submit card">
+            <h1>I'd like to hear your quote suggestions!</h1>
+
+            <p class="main dark-gray cont">
+                I'm constantly on the watch for new quotes. I can't promise
+                your suggestions will be on the site but chances are pretty high :)
+            </p>
+
+            <form id="submit-form" action="">
+                <div class="mdl-textfield mdl-js-textfield contact-input">
+                    <textarea class="mdl-textfield__input" rows="4" id="quote"></textarea>
+                    <label class="mdl-textfield__label" for="quote">Quote</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label contact-input">
+                    <input class="mdl-textfield__input" type="text" id="author">
+                    <label class="mdl-textfield__label" for="author">Author</label>
+                </div>
+            </form>
+
+        </div>
+        <!--</div>-->
+
+        <!--Android App-->
+        <div class="content androidapp card">
+            <div class="applayout">
+                <div id="androidapptext">
+                    <h1>easeWave for Android</h1>
+
+                    <div id="appdescription">
+                        <p>Freshen up your brain with positive thoughts for every day directly on your smartphone!
+                            The easeWave app can help you integrate positive thinking in your everyday life.</p>
+                        <!--Start WOWSlider.com BODY section-->
+                        <div id="wowslider-container2">
+                            <div class="ws_images">
+                                <ul>
+                                    <li><img src="../wowslider/data2/images_en/easewave_screenshot_1.png"
+                                             alt="easewave_screenshot_1" id="wows2_0"/></li>
+                                    <li><img src="../wowslider/data2/images_en/easewave_screenshot_2.png"
+                                             alt="easewave_screenshot_2" id="wows2_1"/></li>
+                                    <li><img src="../wowslider/data2/images_en/easewave_screenshot_3.png"
+                                             alt="easewave_screenshot_3" id="wows2_2"/></li>
+                                    <li><img src="../wowslider/data2/images_en/easewave_screenshot_4.png"
+                                             alt="easewave_screenshot_4" id="wows2_3"/></li>
+                                    <li><img src="../wowslider/data2/images_en/easewave_screenshot_5.png"
+                                             alt="easewave_screenshot_5" id="wows2_4"/></li>
+                                    <li><img src="../wowslider/data2/images_en/easewave_screenshot_6.png"
+                                             alt="easewave_screenshot_6" id="wows2_5"/></li>
+                                    <li><img src="../wowslider/data2/images_en/easewave_screenshot_7.png"
+                                             alt="easewave_screenshot_7" id="wows2_6"/></li>
+                                    <li><img src="../wowslider/data2/images_en/easewave_screenshot_8.png"
+                                             alt="easewave_screenshot_8" id="wows2_7"/></li>
+                                </ul>
+                            </div>
+                            <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">http://wowslider.net/</a>
+                                by WOWSlider.com v8.6
+                            </div>
+                        </div>
+                        <script type="text/javascript" src="../wowslider/engine2/wowslider.js"></script>
+                        <script type="text/javascript" src="../wowslider/engine2/script.js"></script>
+                        <!--End WOWSlider.com BODY section -->
+                        <p>✔ Configurable Reminders<br>
+                            ✔ Widgets for home and lockscreen<br>
+                            ✔ DayDream Mode<br>
+                            ✔ Save quote as image<br>
+                            ✔ Free without adverts!<br>
+                        </p>
+                    </div>
+                </div>
+                <a class="playbadge" target='_blank'
+                   href="https://play.google.com/store/apps/details?id=com.jonathansautter.easewave&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img
+                        id="googleplaylink"
+                        alt="Get it on Google Play"
+                        src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"/></a>
+            </div>
+        </div>
+
+        <!--Chrome Extension-->
+        <div class="content chromeextension card">
+            <div class="extensionlayout">
+                <div id="extensiontext">
+                    <h1>Fast access in Chrome</h1>
+                    <div id="extensiondescription">
+                        <p>Glance at todays quote from time to time.
+                            With the Chrome Extension it's just one click away, no matter where you're working on.</p>
+                    </div>
+                </div>
+                <div id="extensionscreenshot">
+                    <img src="../img/extensionscreenshoten.JPG">
+                </div>
+                <div id="extensionbadge">
+                    <a href="https://chrome.google.com/webstore/detail/easewave-deutsch/cecnepjfhoaejomoelpbijmcadldfahc"
+                       target="_blank">
+                        <img src="../img/ChromeWebStore_Badge.png" alt="Chrome Extension" title="Chrome Extension">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Mood Diary-->
+        <div class="content mooddiary card">
+            <div class="mooddiarylayout">
+                <div id="mooddiarytext">
+                    <h1>Your personal Mood Diary.</h1>
+                    <div id="mooddiarydescription">
+                        <p>This app gives you an easy and efficient way to record your mood in everyday life.
+                            With the help of this app, you can follow and discuss progress made with therapy,
+                            with your doctor/psychotherapist.
+                            However, the diary can also help you to plan activities and your day.</p>
+                        <!--Start WOWSlider.com BODY section-->
+                        <div id="wowslider-container1">
+                            <div class="ws_images">
+                                <ul>
+                                    <li><img src="../wowslider/data1/images_en/mooddiary_screenshot_1.png"
+                                             alt="mooddiary_screenshot_1" id="wows1_0"/></li>
+                                    <li><img src="../wowslider/data1/images_en/mooddiary_screenshot_2.png"
+                                             alt="mooddiary_screenshot_2" id="wows1_1"/></li>
+                                    <li><img src="../wowslider/data1/images_en/mooddiary_screenshot_3.png"
+                                             alt="mooddiary_screenshot_3" id="wows1_2"/></li>
+                                    <li><img src="../wowslider/data1/images_en/mooddiary_screenshot_4.png"
+                                             alt="mooddiary_screenshot_4" id="wows1_3"/></li>
+                                    <li><img src="../wowslider/data1/images_en/mooddiary_screenshot_5.png"
+                                             alt="mooddiary_screenshot_5" id="wows1_4"/></li>
+                                    <li><img src="../wowslider/data1/images_en/mooddiary_screenshot_6.png"
+                                             alt="mooddiary_screenshot_6" id="wows1_5"/></li>
+                                    <li><img src="../wowslider/data1/images_en/mooddiary_screenshot_7.png"
+                                             alt="mooddiary_screenshot_7" id="wows1_6"/></li>
+                                    <li><img src="../wowslider/data1/images_en/mooddiary_screenshot_8.png"
+                                             alt="mooddiary_screenshot_8" id="wows1_7"/></li>
+                                    <li><img src="../wowslider/data1/images_en/mooddiary_screenshot_9.png"
+                                             alt="mooddiary_screenshot_9" id="wows1_8"/></li>
+                                </ul>
+                            </div>
+                            <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">http://wowslider.net/</a>
+                                by WOWSlider.com v8.6
+                            </div>
+                        </div>
+                        <script type="text/javascript" src="../wowslider/engine1/wowslider.js"></script>
+                        <script type="text/javascript" src="../wowslider/engine1/script.js"></script>
+                        <!--End WOWSlider.com BODY section -->
+                        <p>One of the most important cognitive behavioral techniques is introspection,
+                            the observation of activities, thoughts and moods.
+                            It allows you and your therapist to gain a more objective overview of your ailments and to
+                            check possible causes of or changes to symptoms during the course of the day or week.
+                            You can, at the start of psychotherapy, develop an initial picture of the problems and
+                            think of starting points for behavioral changes together.<br><br>
+                            ✔ Ideal for people with worries, panic or depression<br>
+                            ✔ Never forget an entry with individual reminders<br>
+                            ✔ Built-in calendar view and manage your entries<br>
+                            ✔ Analysis of the entries with the interactive diagram<br>
+                            ✔ Export entries for further processing in e.g. excel<br>
+                            ✔ Password protection<br>
+                            ✔ Free without adverts!</p>
+                    </div>
+                </div>
+                <a class="playbadge" target='_blank'
+                   href="https://play.google.com/store/apps/details?id=de.jonathansautter.stimmungstagebuch&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img
+                        id="mooddiarylink"
+                        alt="Get it on Google Play"
+                        src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"/></a>
+            </div>
+        </div>
+
+        <!--Start Nav Drawer-->
+        <div class="navdrawer">
+            <button class="mdl-layout__drawer-button drawerToggle" id="drawer-button">
+                <i class="material-icons">menu</i>
+            </button>
+            <h1 id="title">Today's Quote</h1>
+            <nav id="drawer" class="nav">
+            <span class="mdl-layout-title">
+          <img class="android-logo-image" src="../img/logoicon.png"/>
+            <h3>easeWave</h3>
+            <h6>freshen up your brain</h6>
+        </span>
+                <ul class="nav__list">
+                    <li class="nav__item" onclick="drawerHandler(1)">Today's Quote</li>
+                    <li class="nav__item" onclick="drawerHandler(2)">Favorites</li>
+                    <li class="nav__item" onclick="drawerHandler(3)">Browse Quotes</li>
+                    <li class="nav__item" onclick="drawerHandler(4)">Submit Quote</li>
+
+                    <li class="android-drawer-separator"></li>
+                    <li class="nav__subheader sub">More</li>
+                    <li class="nav__item sub" onclick="drawerHandler(7)">About</li>
+                    <li class="nav__item sub" onclick="drawerHandler(8)">Contact</li>
+
+                    <li class="android-drawer-separator"></li>
+                    <li class="nav__subheader">Resources</li>
+                    <li class="nav__item sub" onclick="drawerHandler(11)">Android App</li>
+                    <li class="nav__item sub" onclick="drawerHandler(12)">Chrome Extension</li>
+                    <li class="nav__item sub" onclick="drawerHandler(13)">Mood Diary</li>
+                </ul>
+            </nav>
+        </div>
+        <!-- End Nav Drawer -->
+
+        <!--Contact Send Fab-->
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--grey fabBtn"
+                id="contact_send" type="submit" name="submit">
+            <i class="material-icons">send</i>
+        </button>
+
+        <!--Submit Send Fab-->
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--grey fabBtn"
+                id="submit_send" type="submit" name="submit">
+            <i class="material-icons">send</i>
+        </button>
+
+        <!-- Start Share Menu -->
+        <div class="sharemenu">
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--grey fabBtn"
+                    id="fabShare">
+                <i class="material-icons">add</i>
+            </button>
+            <ul>
+                <li>
+                    <button class="mdl-button mdl-js-button mdl-button&#45;&#45;fab mdl-button mdl-js-ripple-effect"
+                            id="twitter" title="share on Twitter"
+                            onclick="twitter_click()">
+                        <img alt="Twitter" title="share on Twitter" src="../img/twitter_square.png">
+                    </button>
+                </li>
+                <li>
+                    <button class="mdl-button mdl-js-button mdl-button&#45;&#45;fab mdl-button mdl-js-ripple-effect"
+                            id="mail" title="send via E-Mail"
+                            onclick="email_click()">
+                        <img alt="E-Mail" title="send via E-Mail" src="../img/mail_square2.png">
+                    </button>
+                </li>
+                <li>
+                    <button class="mdl-button mdl-js-button mdl-button&#45;&#45;fab mdl-button mdl-js-ripple-effect"
+                            id="googleplus" title="share on Google+"
+                            onclick="hidesharebar()">
+                        <img alt="Google+" title="share on Google+" src="../img/googleplus_square.png">
+                    </button>
+                </li>
+                <li>
+                    <button class="mdl-button mdl-js-button mdl-button&#45;&#45;fab mdl-button mdl-js-ripple-effect"
+                            id="facebook" title="share on Facebook"
+                            onclick="fb_click()">
+                        <img alt="Facebook" title="share on Facebook" src="../img/fb_square.png">
+                    </button>
+                </li>
+                <li>
+                    <button class="mdl-button mdl-js-button mdl-button&#45;&#45;fab mdl-button mdl-js-ripple-effect"
+                            id="favorite" title="add to favorites"
+                            onclick="fabFavorite_click()">
+                        <img id="fab_fav_img" alt="Favorite" title="add to favorites"
+                             src="../img/fav_empty_square.png">
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <!-- End Share Menu -->
+    </div>
+</div>
+<!-- End Hero -->
+
+<div id="fb-root"></div>
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="../js/modernizr.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="//www.parsecdn.com/js/parse-1.6.12.min.js"></script>
+<script src="../js/mdl-jquery-modal-dialog.js"></script>
+<script src='../js/jquery.transit.min.js'></script>
+<script src="../js/velocity.min.js"></script>
+<script src="../js/animate.min.js"></script>
+<script src="../js/custom_en.js"></script>
+</body>
+</html>

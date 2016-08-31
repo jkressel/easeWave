@@ -1,0 +1,1426 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+/******************************************************************
+	General
+******************************************************************/
+
+body {
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    letter-spacing: 0.025em;
+    -webkit-font-smoothing: subpixel-antialiased;
+    overflow: hidden;
+    background-color: white;
+}
+
+a {
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    text-decoration: none;
+    color: #6093e7;
+}
+
+a:hover {
+    color: #6093e7;
+}
+
+b {
+    font-weight: bold;
+}
+
+p {
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    line-height: 1.6em;
+    color: #848484;
+    font-size: 12px;
+}
+
+h1 {
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    line-height: 1.6em;
+    color: #454544;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    line-height: 1.6em;
+    color: #454544;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+h3 {
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    line-height: 1em;
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h4 {
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    line-height: 1.6em;
+    color: #454544;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+h5 {
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    line-height: 1.6em;
+    color: #454544;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+h6 {
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    line-height: 1em;
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.highlight {
+    /*background-color: #6093e7;*/
+    font-weight: 600;
+}
+
+.dialog-container, .loading-container {
+    overflow: hidden;
+}
+
+/******************************************************************
+	Initially hide stuff
+******************************************************************/
+
+.card, #myResults, #myResultssource, .searchbar, #search-close,
+#contact_send, #submit_send, #fabShare, .sharemenu, .browse, .about, .contact,
+.androidapp {
+    display: none;
+}
+
+#hideall {
+    opacity: 0;
+}
+
+/******************************************************************
+	Scrollbar
+******************************************************************/
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(196, 196, 196);
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(237, 237, 237);
+}
+
+/******************************************************************
+	Text Selection Styles
+******************************************************************/
+
+::selection {
+    background: #6093e7;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #6093e7;
+    color: #fff;
+}
+
+::-webkit-selection {
+    background: #6093e7;
+    color: #fff;
+}
+
+a {
+    outline: none;
+}
+
+/******************************************************************
+	Colors
+******************************************************************/
+
+.white {
+    color: #FFF;
+}
+
+.color {
+    color: #6093e7;
+}
+
+.dark-gray {
+    color: #4b4b4b;
+}
+
+.mid-gray {
+    color: #ababab;
+}
+
+.light-gray {
+    color: #cfcfcf;
+}
+
+/******************************************************************
+	Main
+******************************************************************/
+
+.content {
+    max-width: 960px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blockquote {
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    font-size: 28px;
+    line-height: 60px;
+    width: 100%;
+    background-color: #f6f6f6;
+    height: 160px;
+    text-align: center;
+    padding-top: 50px;
+    color: #616161;
+    font-weight: 300;
+    font-style: italic;
+}
+
+p.main {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+}
+
+div.section.divider {
+    width: 100%;
+    height: 10px;
+    border-top: 1px solid #6093e7;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+div.section.divider.single {
+    border-top: 1px solid #6093e7;
+    margin-top: 150px;
+}
+
+div.section.divider h2 {
+    font-weight: 400;
+    color: #6093e7;
+    background-color: #FFF;
+    margin-top: -20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+a.scroll {
+    width: 100%;
+    display: block;
+}
+
+div.icon {
+    font-size: 80px;
+    color: #FFF;
+    text-align: center;
+}
+
+.front div.icon {
+    line-height: 210px;
+    text-align: center;
+}
+
+/******************************************************************
+	Hero
+******************************************************************/
+
+.hero {
+    width: 100%;
+    height: 100%;
+}
+
+.home.hero {
+    background: #3f3f3f url(../img/home_bg.jpg) no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/overlay_light2_diagonal.png) repeat;
+}
+
+.herowrapper {
+    position: absolute;
+    width: 80%;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -60%);
+    -ms-transform: translate(-50%, -60%);
+    transform: translate(-50%, -60%);
+    text-align: center;
+}
+
+#myResults {
+    text-align: center;
+    color: rgba(62, 62, 62, 0.8);
+    font-size: 2.1rem;
+    line-height: 4.2rem;
+    font-weight: 300;
+    display: inline;
+    margin: 5px auto;
+    padding: 0.3rem;
+
+    background-color: rgba(244, 244, 244, 0.8);
+    border-left: 0.2em solid rgba(244, 244, 244, 0.1);
+    border-right: 0.2em solid rgba(244, 244, 244, 0.1);
+    -webkit-box-decoration-break: clone;
+    -ms-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+#myResultssource {
+    text-align: center;
+    color: rgba(244, 244, 244, 0.8);
+    font-weight: 300;
+    display: inline-block;
+    background-color: rgba(28, 28, 28, 0.8);
+    padding: 3px 5px 3px 5px;
+    font-size: 18px;
+    margin-left: 1%;
+    margin-top: 0;
+}
+
+.content h1 {
+    text-align: center;
+    color: rgba(62, 62, 62, 0.8);
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.share-buttons {
+    list-style: none;
+    text-align: center;
+    margin: auto auto auto -5px;
+}
+
+.share-buttons li {
+    display: inline;
+    color: #FFF;
+}
+
+.shadowed {
+    -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.1));
+}
+
+#icon {
+    margin: 5px;
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+    transition: opacity .8s ease-out;
+    -moz-transition: opacity .8s ease-out;
+    -webkit-transition: opacity .8s ease-out;
+    -o-transition: opacity .8s ease-out;
+}
+
+#icon:hover {
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+    transition: opacity .8s ease-out;
+    -moz-transition: opacity .8s ease-out;
+    -webkit-transition: opacity .8s ease-out;
+    -o-transition: opacity .8s ease-out;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.76);
+    padding: 10px 50px 20px 50px;
+    overflow: auto;
+    text-align: center;
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    color: #848484;
+    font-size: 16px;
+    /*position: absolute;*/
+    /*top: 100px;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*height: 100%;*/
+    vertical-align: middle;
+    /*margin: 15px 0px 15px 20px;*/
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    width: 60%;
+    z-index: 2;
+}
+
+.card p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/******************************************************************
+	Android App Bar
+******************************************************************/
+
+.appbar {
+    position: fixed;
+    top: -150px;
+    height: 55px;
+    width: 100%;
+    z-index: 9999;
+    background-color: #FFF;
+    margin-top: -110px;
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.appbar.alt {
+    background-color: #f6f6f6;
+}
+
+ul.mainmenu {
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    text-align: center;
+    margin: 5px auto 0 auto;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.closex {
+    float: right;
+    padding: 10px;
+    margin-top: -2px;
+    margin-right: 10px;
+}
+
+ul.mainmenu li {
+    display: inline-block;
+    padding: 10px 5px 5px 5px;
+    font-size: 13px;
+}
+
+ul.mainmenu li a {
+    font-size: 13px;
+    color: #838282;
+    -webkit-transition: color 400ms ease;
+    -moz-transition: color 400ms ease;
+    -o-transition: color 400ms ease;
+    -ms-transition: color 400ms ease;
+    transition: color 400ms ease;
+}
+
+ul.mainmenu li:hover a {
+    color: #6093e7;
+}
+
+ul.mainmenu li.active a {
+    font-weight: bold;
+    color: #6093e7;
+}
+
+.download {
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    font-size: 10px;
+    top: -5px;
+}
+
+/******************************************************************
+	Navigation Drawer
+******************************************************************/
+
+.navdrawer {
+    position: absolute;
+    /*width: 300px;*/
+    height: 100%;
+}
+
+.navdrawer h1 {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 80px;
+    top: 8px;
+    cursor: default;
+    white-space: nowrap;
+    margin-top: 19px;
+}
+
+#title.hidethis {
+    display: inline-block;
+}
+
+.mdl-layout-title {
+    display: block;
+    background-color: #606060;
+    padding: 20px;
+}
+
+.mdl-layout-title h3 {
+    margin-top: 0;
+}
+
+.nav__list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav h6 {
+    margin-top: -15px;
+}
+
+.nav img {
+    width: 70px;
+}
+
+.drawerToggle {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #FFF;
+    z-index: 10;
+    background: transparent !important;
+    outline: 0;
+}
+
+.android-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+}
+
+.nav {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*padding-top: 56px;*/
+    background-color: #ffffff;
+    transform: translate(-300px, 0);
+    -webkit-transform: translate(-300px, 0);
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+
+    z-index: 40;
+}
+
+.nav__item {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    text-align: left;
+    line-height: 18px;
+    padding: 20px 20px 20px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav__item.sub {
+    padding: 20px 20px 20px 40px !important;
+}
+
+.nav__subheader {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ababab;
+}
+
+.nav__list {
+    margin: 10px 0 10px 0;
+}
+
+.nav__list li.nav__item:hover {
+    background-color: #d1d1d1 !important;
+}
+
+nav.open {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+}
+
+.darker {
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.darker.open {
+    display: block;
+    opacity: 0.5;
+    z-index: 5;
+}
+
+/******************************************************************
+	Share Menu
+******************************************************************/
+
+.fabBtn {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: #444444;
+    z-index: 10;
+    box-shadow: none;
+    background: #FFF !important;
+}
+
+.sharemenu {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    z-index: 10;
+}
+
+.sharemenu ul {
+    margin-bottom: 90px;
+    margin-right: 72px;
+}
+
+.sharemenu li {
+    position: absolute;
+}
+
+.sharemenu li button {
+    display: none;
+}
+
+.sharemenu img {
+    width: 60px;
+    margin: -2px;
+}
+
+/******************************************************************
+	Favorites
+******************************************************************/
+
+.content.favorites {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    max-width: none;
+}
+
+.searchbar-fav {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+#search-close-fav {
+    right: 0;
+    position: relative;
+    bottom: 0;
+}
+
+#content-fav {
+    position: absolute;
+    top: 70px;
+    bottom: 0;
+    width: 100%;
+    overflow-y: auto;
+}
+
+/******************************************************************
+	Browse Quotes
+******************************************************************/
+
+.content.browse {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    max-width: none;
+}
+
+.center-spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+}
+
+.searchbar {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+#search-icon {
+    top: 20px;
+}
+
+#search-close {
+    right: 0;
+    position: relative;
+    bottom: 0;
+    display: inline-block;
+}
+
+/******************************************************************
+	Contact
+******************************************************************/
+
+.contact-input {
+    display: block;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.cont {
+    margin-bottom: 30px;
+}
+
+textarea {
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    line-height: 30px;
+    height: 150px;
+    font-size: 16px;
+    width: 600px;
+}
+
+#formstatus {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#submitformstatus {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#submitcontact {
+    display: none;
+}
+
+/******************************************************************
+	Android App
+******************************************************************/
+
+.applayout {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#googleplaylink {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.playbadge {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.applayout h1 {
+    text-align: center;
+}
+
+#androidapptext {
+    width: 100%;
+    overflow: auto;
+}
+
+#appdescription {
+    color: #4b4b4b;
+    text-align: center;
+}
+
+#appdescription ul {
+    list-style: disc;
+    padding: 0 0 0 3em;
+    font-size: 16px;
+}
+
+#appdescription p {
+    margin-top: 10px;
+}
+
+/******************************************************************
+	Chrome Extension
+******************************************************************/
+
+.extenstionlayout {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#extensionlink {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.extenstionlayout h1 {
+    text-align: left;
+    padding: 10% 10% 0 0;
+    margin-top: 0;
+}
+
+#extensiontext {
+    width: 100%;
+    overflow: auto;
+}
+
+#extensionscreenshot img {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
+}
+
+#extensionbadge img {
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    padding-bottom: 5%;
+}
+
+#extensiondescription {
+    color: #4b4b4b;
+    text-align: center;
+}
+
+#extensiondescription p {
+    margin-top: 10px;
+}
+
+/******************************************************************
+	MoodDiary
+******************************************************************/
+
+.mooddiarylayout {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#mooddiarylink {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mooddiarylayout h1 {
+    text-align: center;
+}
+
+#mooddiarytext {
+    width: 100%;
+    overflow: auto;
+}
+
+#mooddiarydescription {
+    color: #4b4b4b;
+    text-align: center;
+}
+
+#mooddiarydescription p {
+    margin-top: 10px;
+}
+
+/******************************************************************
+	Spinner
+******************************************************************/
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 100px;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+
+.circular.is-active {
+    animation: rotate 2s linear infinite;
+}
+
+.path.is-active {
+    animation: dash 1.5s ease-in-out infinite,
+    color 6s ease-in-out infinite;
+}
+
+.loader:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+.circular {
+    /*animation: rotate 2s linear infinite;*/
+    height: 100%;
+    transform-origin: center center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.path {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    /*animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;*/
+    stroke-linecap: round;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
+
+@keyframes color {
+    100%, 0% {
+        stroke: #6093e7;
+    }
+}
+
+/* Hide G+ Welcome Back Toast*/
+iframe[src^="https://apis.google.com/u/0/_/widget/oauthflow/toast"] {display: none; z-index: -5;}
+
+/******************************************************************
+	Mobile
+******************************************************************/
+
+@media all and (max-width: 1024px) {
+    .navdrawer h1 {
+        top: 2px;
+    }
+
+    .card {
+        top: 80px;
+    }
+
+    #content {
+        top: 60px;
+    }
+
+    .searchbar {
+        top: 2px;
+    }
+}
+
+@media all and (max-height: 800px) {
+    .mdl-layout-title {
+        padding: 20px 20px 5px 20px;
+    }
+
+    .mdl-layout-title h3 {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .nav__list {
+        margin: 5px 0 5px 0;
+    }
+
+    .android-drawer-separator {
+        margin: 5px 0;
+    }
+
+    .nav__subheader {
+        padding: 5px 20px 5px 20px;
+    }
+
+    .nav__item {
+        padding: 15px 15px 15px 20px;
+    }
+
+    .nav__item.sub {
+        padding: 15px 15px 15px 40px !important;
+    }
+}
+
+@media all and (min-width: 641px) and (max-width: 960px) {
+    .home.hero {
+        background: url(../img/home_bg_960.jpg) no-repeat center center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    ul.portfolio li {
+        width: 50%;
+    }
+
+    div.wrap {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    div.item1 {
+        width: 100%;
+    }
+
+    div.item2 {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: -5px;
+        margin-top: 10px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .blockquote {
+        line-height: 60px;
+        height: 140px;
+        padding-top: 35px;
+    }
+
+    div.section.divider h2 {
+        margin-top: -20px;
+        width: 300px;
+        font-size: 20px;
+    }
+
+    p.main {
+        font-size: 14px;
+    }
+
+    p.cont {
+        margin-bottom: 30px;
+    }
+
+    .scrolldown .icon {
+        font-size: 15px;
+        text-align: center;
+        line-height: 12px;
+    }
+
+    .arrow {
+        width: 17px;
+    }
+}
+
+@media all and (max-width: 700px) {
+
+    #extensionscreenshot img {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 460px) {
+    #title.hidethis {
+        display: none;
+    }
+
+    .searchbar {
+        top: 2px;
+    }
+
+    ul.mainmenu li {
+        font-size: 10px;
+    }
+
+    #myResults {
+        text-align: center;
+        color: rgba(62, 62, 62, 0.8);
+        font-size: 1.8rem;
+        line-height: 3.5rem;
+        font-weight: 300;
+        display: inline;
+        margin: 5px auto;
+        padding: 0.2rem;
+        background-color: rgba(244, 244, 244, 0.8);
+        border-left: 0.2em solid rgba(244, 244, 244, 0.1);
+        border-right: 0.2em solid rgba(244, 244, 244, 0.1);
+        -webkit-box-decoration-break: clone;
+        -ms-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+    }
+
+    #myResultssource {
+        text-align: center;
+        color: rgba(244, 244, 244, 0.8);
+        font-weight: 300;
+        display: inline-block;
+        background-color: rgba(28, 28, 28, 0.8);
+        padding: 2px 3px 2px 3px;
+        font-size: 15px;
+        margin-left: 0.5%;
+        margin-top: 3px;
+    }
+}
+
+@media all and (max-width: 350px) {
+    #myResults {
+        text-align: center;
+        color: rgba(62, 62, 62, 0.8);
+        font-size: 1.5rem;
+        line-height: 3.0rem;
+        font-weight: 300;
+        display: inline;
+        margin: 5px auto;
+        padding: 0.2rem;
+        background-color: rgba(244, 244, 244, 0.8);
+        border-left: 0.2em solid rgba(244, 244, 244, 0.1);
+        border-right: 0.2em solid rgba(244, 244, 244, 0.1);
+        -webkit-box-decoration-break: clone;
+        -ms-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+    }
+
+    #myResultssource {
+        text-align: center;
+        color: rgba(244, 244, 244, 0.8);
+        font-weight: 300;
+        display: inline-block;
+        background-color: rgba(28, 28, 28, 0.8);
+        padding: 2px 3px 2px 3px;
+        font-size: 14px;
+        margin-left: 0.5%;
+        margin-top: 3px;
+    }
+
+    .nav {
+        width: 250px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 640px) {
+    .card {
+        width: 80%;
+    }
+
+    .home.hero {
+        background: url(../img/home_bg_640.jpg) no-repeat center center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+
+    div.wrap {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    div.item1 {
+        width: 100%;
+    }
+
+    div.item2 {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: -5px;
+        margin-top: 10px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .blockquote {
+        line-height: 60px;
+        height: 110px;
+        padding-top: 25px;
+    }
+
+    ul.portfolio li {
+        width: 50%;
+    }
+
+    div.section.divider h2 {
+        margin-top: -20px;
+        width: 300px;
+        font-size: 20px;
+    }
+
+    p.main {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    p.cont {
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+
+    h1.unselectable {
+        margin-bottom: 10px;
+        font-size: 1.5em !important;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 10px 25px 20px 25px;
+    }
+
+    .content h1 {
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+
+    .scrolldown .icon {
+        font-size: 15px;
+        text-align: center;
+        line-height: 10px;
+    }
+
+    .arrow {
+        width: 14px;
+    }
+
+    .shareBtn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: #FFF;
+        z-index: 5;
+    }
+}
+
+@media (max-width: 320px) {
+    .card {
+        width: 80%;
+    }
+
+    .home.hero {
+        background: url(../img/home_bg_320.jpg) no-repeat center center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+
+    div.wrap {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    div.item1 {
+        width: 100%;
+    }
+
+    div.item2 {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: -5px;
+        margin-top: 10px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        margin: 5px 0;
+    }
+
+    .blockquote {
+        line-height: 60px;
+        height: 110px;
+        padding-top: 25px;
+    }
+
+    ul.portfolio li {
+        width: 50%;
+    }
+
+    div.section.divider h2 {
+        margin-top: -20px;
+        width: 300px;
+        font-size: 20px;
+    }
+
+    p.main {
+        font-size: 14px;
+        margin: -15px 0 45px auto;
+    }
+
+    p.cont {
+        margin-bottom: 30px;
+    }
+
+    .scrolldown .icon {
+        font-size: 10px;
+        text-align: center;
+        line-height: 5px;
+    }
+
+    .arrow {
+        width: 10px;
+    }
+
+    .shareBtn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: #FFF;
+        z-index: 5;
+    }
+}
