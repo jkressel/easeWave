@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$PlaceholderFragment"
+    android:id="@+id/screenlayout">
+
+    <ImageSwitcher
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageSwitcher" />
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/card_margin_leftright"
+            android:layout_marginRight="@dimen/card_margin_leftright">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/quote_wrap"
+                android:background="@drawable/quote_card"
+                android:padding="5dp"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/quote"
+                    android:textColor="#2e2e2e"
+                    android:textSize="@dimen/appfontsize"
+                    android:lineSpacingExtra="5sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/source"
+                android:layout_below="@+id/quote_wrap"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="#dadada"
+                android:background="@drawable/round_rectangle_dark"
+                android:padding="5dp"
+                android:textSize="@dimen/appfontsize"
+                android:visibility="invisible"
+                android:gravity="center_horizontal" />
+        </RelativeLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipe_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </ScrollView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            fab:menu_fab_size="mini"
+            fab:menu_showShadow="true"
+            fab:menu_shadowColor="#32000000"
+            fab:menu_shadowRadius="1dp"
+            fab:menu_shadowXOffset="0.5dp"
+            fab:menu_shadowYOffset="0.5dp"
+            fab:menu_colorNormal="#ffffff"
+            fab:menu_colorPressed="#e1e1e1"
+            fab:menu_colorRipple="#99FFFFFF"
+            fab:menu_animationDelayPerItem="50"
+            fab:menu_icon="@drawable/ic_fab_add_dark"
+            fab:menu_buttonSpacing="0dp"
+            fab:menu_labels_margin="0dp"
+            fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+            fab:menu_labels_paddingTop="4dp"
+            fab:menu_labels_paddingRight="8dp"
+            fab:menu_labels_paddingBottom="4dp"
+            fab:menu_labels_paddingLeft="8dp"
+            fab:menu_labels_padding="8dp"
+            fab:menu_labels_textColor="#FFFFFF"
+            fab:menu_labels_textSize="14sp"
+            fab:menu_labels_cornerRadius="3dp"
+            fab:menu_labels_colorNormal="#333333"
+            fab:menu_labels_colorPressed="#444444"
+            fab:menu_labels_colorRipple="#66FFFFFF"
+            fab:menu_labels_showShadow="true"
+            fab:menu_labels_singleLine="false"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_position="left"
+            fab:menu_openDirection="up"
+            fab:menu_backgroundColor="@android:color/transparent"
+            android:visibility="invisible">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/menu_item3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_fab_image"
+                fab:fab_colorNormal="@color/fab"
+                fab:fab_colorPressed="#494949"
+                fab:fab_colorRipple="#99c7c7c7"
+                fab:fab_size="mini"
+                fab:fab_label="@string/shareasimage"
+                fab:fab_shadowColor="#32000000"
+                fab:fab_shadowRadius="5dp"
+                fab:fab_shadowXOffset="0.5dp"
+                fab:fab_shadowYOffset="0.5dp" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/menu_item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_fab_share"
+                fab:fab_colorNormal="@color/fab"
+                fab:fab_colorPressed="#494949"
+                fab:fab_colorRipple="#99c7c7c7"
+                fab:fab_size="mini"
+                fab:fab_label="@string/share"
+                fab:fab_shadowColor="#32000000"
+                fab:fab_shadowRadius="5dp"
+                fab:fab_shadowXOffset="0.5dp"
+                fab:fab_shadowYOffset="0.5dp" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/menu_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_fab_star"
+                fab:fab_colorNormal="@color/fab"
+                fab:fab_colorPressed="#494949"
+                fab:fab_colorRipple="#99c7c7c7"
+                fab:fab_size="mini"
+                fab:fab_label="@string/addtofavs"
+                fab:fab_shadowColor="#32000000"
+                fab:fab_shadowRadius="5dp"
+                fab:fab_shadowXOffset="0.5dp"
+                fab:fab_shadowYOffset="0.5dp" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="easeWave.com"
+            android:id="@+id/watermark"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:visibility="invisible"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="false"
+            android:layout_marginBottom="-6dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/actionbarShadow"
+        android:background="@drawable/card_shadow"
+        android:layout_alignParentTop="true">
+    </FrameLayout>
+
+</RelativeLayout>

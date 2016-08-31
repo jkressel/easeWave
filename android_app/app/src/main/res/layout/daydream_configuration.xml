@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_dark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/configuredaydream"
+            android:id="@+id/textView20"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#FFFFFF" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView5" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nightmodelayout"
+                    android:background="@drawable/settingstap_dark"
+                    android:clickable="true"
+                    android:visibility="visible"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/nightmode"
+                        android:id="@+id/textView21"
+                        android:textColor="#FFFFFF"
+                        android:layout_toLeftOf="@+id/nightmodeswitch" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/dimmdisplay"
+                        android:id="@+id/textView22"
+                        android:layout_below="@+id/textView21"
+                        android:textColor="#FFFFFF"
+                        android:layout_toLeftOf="@+id/nightmodeswitch" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/nightmodeswitch"
+                        android:theme="@style/Custom_switchcompat_dark"
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:checked="false"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_dark" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:id="@+id/unicoloredbackgroundlayout"
+                    android:background="@drawable/settingstap_dark"
+                    android:clickable="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/plainbackground"
+                        android:id="@+id/textView7s"
+                        android:textColor="#FFFFFF"
+                        android:layout_toLeftOf="@+id/centerswitch" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/csafsaf"
+                        android:textColor="#FFFFFF"
+                        android:layout_below="@+id/textView7s"
+                        android:text="@string/noimagebackground"
+                        android:layout_toLeftOf="@+id/centerswitch" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/centerswitch"
+                        android:theme="@style/Custom_switchcompat_dark"
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:checked="false"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_dark" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/backgroundcolorlayout"
+                    android:background="@drawable/settingstap_dark"
+                    android:clickable="true"
+                    android:visibility="visible"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/backgroundcolor"
+                        android:id="@+id/textView23"
+                        android:textColor="#FFFFFF"
+                        android:layout_toLeftOf="@+id/backgroundcolorindicator" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/taptochoosecolor"
+                        android:id="@+id/textView24"
+                        android:layout_below="@+id/textView23"
+                        android:textColor="#FFFFFF"
+                        android:layout_toLeftOf="@+id/backgroundcolorindicator" />
+
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/backgroundcolorindicator"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/circle"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginLeft="5dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/done"
+        android:id="@+id/done"
+        android:layout_marginRight="20dp"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:layout_alignParentRight="true"
+        android:padding="8dp"
+        android:background="@drawable/dialog_btn"
+        android:layout_gravity="end"
+        android:textColor="@color/appthemecolor"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp" />
+
+</RelativeLayout>

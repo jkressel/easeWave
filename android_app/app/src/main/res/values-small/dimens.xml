@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="appfontsize">18sp</dimen>
+    <dimen name="widgetfontsize">14sp</dimen>
+    <dimen name="lockscreenwidgetfontsize">16sp</dimen>
+    <dimen name="carddemo_shadow_elevation">2dp</dimen>
+    <dimen name="card_margin_leftright">20dp</dimen>
+    <dimen name="card_base_empty_height">0dp</dimen>
+    <dimen name="font14">14sp</dimen>
+    <dimen name="font16">16sp</dimen>
+    <dimen name="font18">18sp</dimen>
+    <dimen name="font28">28sp</dimen>
+
+</resources>

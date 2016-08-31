@@ -1,0 +1,87 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@color/background_dark</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Custom_switchcompat">
+        <!-- Active thumb color & Active track color(30% transparency) -->
+        <item name="colorControlActivated">@color/white</item>
+        <!-- Inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/half_black</item>
+        <!-- Inactive track color(30% transparency) -->
+        <item name="android:colorForeground">@color/half_black</item>
+    </style>
+
+    <style name="Custom_switchcompat_dark">
+        <!-- Active thumb color & Active track color(30% transparency) -->
+        <item name="colorControlActivated">@color/appthemecolor</item>
+        <!-- Inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/half_black</item>
+        <!-- Inactive track color(30% transparency) -->
+        <item name="android:colorForeground">@color/half_black</item>
+    </style>
+
+    <style name="Custom_checkbox">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="myDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:background">#e1ffffff</item>
+        <item name="android:textColor">#000000</item>
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">@color/appthemecolor</item>
+        <item name="colorControlHighlight">@color/appthemecolor</item>
+    </style>
+
+    <style name="ThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/appthemecolor</item>
+        <item name="colorPrimary">@color/appthemecolor</item>
+        <item name="colorPrimaryDark">@color/appthemecolor</item>
+    </style>
+
+    <style name="AppThemeFullscreen" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">@color/appthemecolor</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/appthemecolor</item>
+
+    </style>
+
+    <style name="FilePickerTheme" parent="NNF_BaseTheme">
+        <!-- Set these to match your theme -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Need to set this also to style create folder dialog -->
+        <item name="alertDialogTheme">@style/FilePickerAlertDialogTheme</item>
+
+        <!-- If you want to set a specific toolbar theme, do it here -->
+        <!-- <item name="nnf_toolbarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item> -->
+    </style>
+
+    <style name="FilePickerAlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

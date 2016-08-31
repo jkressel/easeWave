@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto" android:id="@+id/screenlayout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/toplayout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView3"
+            android:layout_marginTop="60dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/card_bg_ripple"
+                    android:layout_marginLeft="@dimen/card_margin_leftright"
+                    android:layout_marginRight="@dimen/card_margin_leftright"
+                    android:orientation="vertical"
+                    android:id="@+id/card0"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/persistentnotification"
+                        android:id="@+id/persistant"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:alpha="0.8"
+                        android:layout_toLeftOf="@+id/persistentnotificationtoggle" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/showtodaysquote"
+                        android:id="@+id/textView43"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:layout_marginTop="-5dp"
+                        android:layout_below="@+id/persistant"
+                        android:alpha="0.8"
+                        android:layout_toLeftOf="@+id/persistentnotificationtoggle"
+                        android:layout_marginLeft="10dp" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/persistentnotificationtoggle"
+                        android:theme="@style/Custom_switchcompat_dark"
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:checked="false"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/card_bg_ripple"
+                    android:layout_marginLeft="@dimen/card_margin_leftright"
+                    android:layout_marginRight="@dimen/card_margin_leftright"
+                    android:orientation="vertical"
+                    android:id="@+id/card1"
+                    android:layout_below="@+id/card0"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text=""
+                        android:id="@+id/r1time"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:alpha="0.8"
+                        android:background="?attr/selectableItemBackground"
+                        android:layout_margin="5dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/weekdays"
+                        android:id="@+id/r1dayssum"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="-5dp"
+                        android:layout_below="@+id/r1time"
+                        android:alpha="0.8"
+                        android:layout_toLeftOf="@+id/r1toggle" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/r1toggle"
+                        android:theme="@style/Custom_switchcompat_dark"
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:checked="true"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="20dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/card1expand"
+                    android:layout_below="@+id/card1"
+                    android:layout_marginLeft="@dimen/card_margin_leftright"
+                    android:layout_marginRight="@dimen/card_margin_leftright"
+                    android:background="@drawable/card_expand_bg"
+                    android:padding="10dp"
+                    android:layout_marginTop="-11dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/sound"
+                        android:id="@+id/textView3"
+                        android:alpha="0.8"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/r1tone"
+                        android:alpha="0.8"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/textView3"
+                        android:textStyle="bold"
+                        android:layout_toLeftOf="@+id/r1sound"
+                        android:lines="1"
+                        android:textColor="@color/white" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/r1sound"
+                        android:theme="@style/Custom_switchcompat"
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:checked="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/vibrate"
+                        android:id="@+id/textView6"
+                        android:layout_below="@+id/textView3"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.8"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/r1vibrate"
+                        android:theme="@style/Custom_switchcompat"
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:checked="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_below="@+id/r1sound"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/repeat"
+                        android:id="@+id/textView5"
+                        android:textSize="16sp"
+                        android:alpha="0.8"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/textView6"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white" />
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/scrollView4"
+                        android:layout_below="@+id/textView5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/weekdays"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mo"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r1mo"
+                                android:layout_marginRight="10dp"
+                                android:checked="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="-7dp"
+                                android:textColor="@color/white" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tu"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r1tu"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:checked="true"
+                                android:textColor="@color/white" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/we"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r1we"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:checked="true"
+                                android:textColor="@color/white" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/th"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r1th"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:checked="true"
+                                android:textColor="@color/white" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/fr"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r1fr"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:checked="true"
+                                android:textColor="@color/white" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sa"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r1sa"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:checked="true"
+                                android:textColor="@color/white" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/su"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r1su"
+                                android:layout_gravity="center_vertical"
+                                android:checked="true"
+                                android:layout_marginRight="15dp"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/card_bg_ripple"
+                    android:layout_marginLeft="@dimen/card_margin_leftright"
+                    android:layout_marginRight="@dimen/card_margin_leftright"
+                    android:orientation="vertical"
+                    android:id="@+id/card2"
+                    android:layout_below="@+id/card1expand"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text=""
+                        android:id="@+id/r2time"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:alpha="0.8"
+                        android:layout_margin="5dp"
+                        android:background="?attr/selectableItemBackground" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/weekdays"
+                        android:id="@+id/r2dayssum"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="-5dp"
+                        android:layout_below="@+id/r2time"
+                        android:alpha="0.8"
+                        android:layout_toLeftOf="@+id/r2toggle" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/r2toggle"
+                        android:theme="@style/Custom_switchcompat_dark"
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:checked="true"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="20dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/card2expand"
+                    android:layout_below="@+id/card2"
+                    android:layout_marginLeft="@dimen/card_margin_leftright"
+                    android:layout_marginRight="@dimen/card_margin_leftright"
+                    android:background="@drawable/card_expand_bg"
+                    android:padding="10dp"
+                    android:layout_marginTop="-11dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/sound"
+                        android:id="@+id/textView32"
+                        android:alpha="0.8"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/r2tone"
+                        android:alpha="0.8"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/textView32"
+                        android:textStyle="bold"
+                        android:layout_toLeftOf="@+id/r2sound"
+                        android:lines="1"
+                        android:textColor="@color/white" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/r2sound"
+                        android:theme="@style/Custom_switchcompat"
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:checked="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/vibrate"
+                        android:id="@+id/textView16"
+                        android:layout_below="@+id/textView32"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.8"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/r2vibrate"
+                        android:theme="@style/Custom_switchcompat"
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:checked="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_below="@+id/r2sound"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/repeat"
+                        android:id="@+id/textView54"
+                        android:textSize="16sp"
+                        android:alpha="0.8"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/textView16"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white" />
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/horizontalScrollView"
+                        android:layout_below="@+id/textView54"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/weekdays2"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mo"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r2mo"
+                                android:layout_marginRight="10dp"
+                                android:checked="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="-7dp"
+                                android:textColor="@color/white" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tu"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r2tu"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:checked="true"
+                                android:textColor="@color/white" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/we"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r2we"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:checked="true"
+                                android:textColor="@color/white" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/th"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r2th"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:checked="true"
+                                android:textColor="@color/white" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/fr"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r2fr"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:checked="true"
+                                android:textColor="@color/white" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sa"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r2sa"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:checked="true"
+                                android:textColor="@color/white" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/su"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r2su"
+                                android:layout_gravity="center_vertical"
+                                android:checked="true"
+                                android:layout_marginRight="15dp"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/card_bg_ripple"
+                    android:layout_marginLeft="@dimen/card_margin_leftright"
+                    android:layout_marginRight="@dimen/card_margin_leftright"
+                    android:orientation="vertical"
+                    android:id="@+id/card3"
+                    android:layout_below="@+id/card2expand"
+                    android:layout_marginBottom="10dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text=""
+                        android:id="@+id/r3time"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:alpha="0.8"
+                        android:layout_margin="5dp"
+                        android:background="?attr/selectableItemBackground" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/weekdays"
+                        android:id="@+id/r3dayssum"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="-5dp"
+                        android:layout_below="@+id/r3time"
+                        android:alpha="0.8"
+                        android:layout_toLeftOf="@+id/screenbrightness" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/screenbrightness"
+                        android:theme="@style/Custom_switchcompat_dark"
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:checked="true"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="20dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/card3expand"
+                    android:layout_below="@+id/card3"
+                    android:layout_marginLeft="@dimen/card_margin_leftright"
+                    android:layout_marginRight="@dimen/card_margin_leftright"
+                    android:background="@drawable/card_expand_bg"
+                    android:padding="10dp"
+                    android:layout_marginTop="-11dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/sound"
+                        android:id="@+id/textVie12w3"
+                        android:alpha="0.8"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/r3tone"
+                        android:alpha="0.8"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:layout_toLeftOf="@+id/r3sound"
+                        android:layout_toRightOf="@+id/textVie12w3"
+                        android:lines="1"
+                        android:textColor="@color/white" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/r3sound"
+                        android:theme="@style/Custom_switchcompat"
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:checked="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/vibrate"
+                        android:id="@+id/text13View6"
+                        android:layout_below="@+id/textVie12w3"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.8"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/r3vibrate"
+                        android:theme="@style/Custom_switchcompat"
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:checked="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_below="@+id/r3sound"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/repeat"
+                        android:id="@+id/textVie46w5"
+                        android:textSize="16sp"
+                        android:alpha="0.8"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/text13View6"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white" />
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/horizontalScrollView2"
+                        android:layout_below="@+id/textVie46w5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/weekda3543ys"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mo"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r3mo"
+                                android:layout_marginRight="10dp"
+                                android:checked="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="-7dp"
+                                android:textColor="@color/white" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tu"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r3tu"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:checked="true"
+                                android:textColor="@color/white" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/we"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r3we"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:checked="true"
+                                android:textColor="@color/white" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/th"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r3th"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:checked="true"
+                                android:textColor="@color/white" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/fr"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r3fr"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:checked="true"
+                                android:textColor="@color/white" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sa"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r3sa"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:checked="true"
+                                android:textColor="@color/white" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/su"
+                                android:theme="@style/Custom_checkbox"
+                                android:id="@+id/r3su"
+                                android:layout_gravity="center_vertical"
+                                android:checked="true"
+                                android:layout_marginRight="15dp"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_fab_add"
+            fab:fab_size="normal"
+            fab:fab_colorNormal="@color/appthemecolor"
+            fab:fab_colorPressed="#59a0df"
+            fab:fab_colorRipple="#99FFFFFF"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/actionbarShadow"
+        android:background="@drawable/card_shadow"
+        android:layout_alignParentTop="true">
+    </FrameLayout>
+
+</RelativeLayout>

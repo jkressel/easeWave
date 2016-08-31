@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nnf_new_folder">Neuer Ordner</string>
+    <string name="nnf_create_folder_error">Erstellen des Ordners fehlgeschlagen!</string>
+    <string name="nnf_name">Name</string>
+    <string name="nnf_permission_external_write_denied">Berechtigung auf das Dateisystem zuzugreifen verweigert!</string>
+    <string name="nnf_select_something_first">Bitte wählen Sie erst etwas aus!</string>
+</resources>

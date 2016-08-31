@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_quote" android:icon="@drawable/quote"
+            android:title="@string/todaysquote" />
+        <item android:id="@+id/nav_favs" android:icon="@drawable/favs"
+            android:title="@string/favorites" />
+        <item android:id="@+id/nav_browse" android:icon="@drawable/browse"
+            android:title="@string/browsequotes" />
+        <item android:id="@+id/nav_reminder" android:icon="@drawable/reminder"
+            android:title="@string/reminders" />
+        <item android:id="@+id/nav_submit" android:icon="@drawable/submit"
+            android:title="@string/submitquote" />
+        <item android:id="@+id/nav_settings" android:icon="@drawable/settings"
+            android:title="@string/settings" />
+    </group>
+
+    <item android:title="@string/more">
+        <menu>
+            <item android:id="@+id/nav_about" android:icon="@drawable/about"
+                android:title="@string/about" />
+            <item android:id="@+id/nav_contact" android:icon="@drawable/contact"
+                android:title="@string/contact" />
+            <item android:id="@+id/nav_website" android:icon="@drawable/website"
+                android:title="easeWave.com" />
+        </menu>
+    </item>
+
+</menu>

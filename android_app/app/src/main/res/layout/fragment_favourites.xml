@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto" android:id="@+id/screenlayout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/toplayout">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="60dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchResults"
+                android:padding="10dp"
+                android:layout_marginRight="@dimen/card_margin_leftright"
+                android:layout_marginLeft="@dimen/card_margin_leftright"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/searchresults"
+                    android:id="@+id/searchResultsTitle"
+                    android:layout_centerVertical="true"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/searchTerm"
+                    android:layout_toRightOf="@+id/searchResultsTitle"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/close"
+                    android:layout_centerVertical="true"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="5dp" />
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/close"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_close"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/circle_btn"
+                    android:padding="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:elevation="4dp"
+                android:layout_below="@+id/searchResults"
+                android:layout_marginTop="5dp">
+
+                <it.gmariotti.cardslib.library.recyclerview.view.CardRecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card:list_card_layout_resourceID="@layout/native_recyclerview_card_layout"
+                    android:id="@+id/carddemo_recyclerview"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="@dimen/card_margin_leftright"
+                    android:layout_marginRight="@dimen/card_margin_leftright"
+                    android:alpha="0.95"
+                    android:paddingBottom="5dp" />
+
+                <it.gmariotti.cardslib.library.recyclerview.view.CardRecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card:list_card_layout_resourceID="@layout/native_recyclerview_card_layout"
+                    android:id="@+id/carddemo_recyclerview_search"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:layout_marginLeft="@dimen/card_margin_leftright"
+                    android:layout_marginRight="@dimen/card_margin_leftright"
+                    android:alpha="0.95"
+                    android:paddingBottom="5dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/actionbarShadow"
+        android:background="@drawable/card_shadow"
+        android:layout_alignParentTop="true">
+    </FrameLayout>
+
+</RelativeLayout>

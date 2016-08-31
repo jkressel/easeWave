@@ -1,0 +1,162 @@
+<resources>
+
+    <string name="app_name" translatable="false">easeWave</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="exportimportfavs">Export/Import Favorites</string>
+    <string name="search">Search</string>
+    <string name="backgroundcolor">Background color</string>
+    <string name="taptochoosecolor">Tap to choose color</string>
+    <string name="plainbackground">Einfarbiger Hintergrund</string>
+    <string name="noimagebackground">Show no image as background</string>
+    <string name="nightmode">Night mode</string>
+    <string name="dimmdisplay">Dimmed Display (for dark invironments)</string>
+    <string name="loading">Loading…</string>
+    <string name="fontcolor">Font Color</string>
+    <string name="done">Done</string>
+    <string name="enterquotehere">Quote</string>
+    <string name="sendmeyoursuggestion">Send me your quote suggentions!\nI add them to my database and soon your suggestion can be the quote of the day.</string>
+    <string name="persistentnotification">Persistent Notification</string>
+    <string name="showtodaysquote">Show today\'s quote in the notification area</string>
+    <string name="weekdays">Mo, Tu, We, Th, Fr, Sa, Su</string>
+    <string name="sound">Sound</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="repeat">Repeat</string>
+    <string name="mo">Mo</string>
+    <string name="tu">Tu</string>
+    <string name="we">We</string>
+    <string name="th">Th</string>
+    <string name="fr">Fr</string>
+    <string name="sa">Sa</string>
+    <string name="su">Su</string>
+    <string name="searchresults">Search Results:</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="choosefontcolor">Choose font color</string>
+    <string name="choosebackgroundcolor">Choose background color</string>
+    <string name="share">Share</string>
+    <string name="remove">Remove</string>
+    <string name="unabletoreceivequote">Unable to receive today\'s quote! Please make sure you\'re connected to the internet.\nSwipe down to refresh.</string>
+    <string name="myfavouritequotes">My favourite quotes from easeWave</string>
+    <string name="sharewith">Share with…</string>
+    <string name="nofavouritessavedyet">No favourites saved yet!</string>
+    <string name="addquotetofavourites">To add a quote to your favourites tap the floating botton on the right side below the quote and then tap the star.</string>
+    <string name="onerefreshingquoteeveryday">One refreshing quote everyday on http://easewave.com</string>
+    <string name="itemdeleted">Item deleted</string>
+    <string name="undo">Undo</string>
+    <string name="searchquotes">Search quotes</string>
+    <string name="usekeywords">Use keywords separated by commas:</string>
+    <string name="success">Success!</string>
+    <string name="close">CLOSE</string>
+    <string name="favouritessaved">Favorites saved to sdcard/easeWave/.\nTo restore your favorites on another device, copy the \'easeWave.favs\' file into the same folder and choose the import function in settings.</string>
+    <string name="sendfilevia">SEND FILE </string>
+    <string name="sendfile">Send file…</string>
+    <string name="error">Error!</string>
+    <string name="somethingwentwrong">Something went wrong. Please try again.</string>
+    <string name="favouritessuccessfulrestored">Favorites successfully restored from file.</string>
+    <string name="canceluppercase">CANCEL</string>
+    <string name="yesuppercase">YES</string>
+    <string name="chooseremindersound">Choose Reminder Sound</string>
+    <string name="pleaseenteryoursuggestion">Please enter your suggestion!</string>
+    <string name="pleasemakesureyourconnected">Please make sure you are connected to the internet.</string>
+    <string name="sugestionsuccessfullysent">Your suggestion has been successfully sent.</string>
+    <string name="thankyou">Thank you!</string>
+    <string name="uhr"> </string>
+    <string name="filealreadyexists">File already exists!</string>
+    <string name="imagesavedtogallery">Image saved to gallery!</string>
+    <string name="shareimage">Share image…</string>
+    <string name="syncerror">Synchronization error</string>
+    <string name="syncerrordescription">You\'re seeing the last quote you loaded which seems to be out of date.\nPlease make sure you are connected to the internet in order to update today\'s quote.</string>
+    <string name="tryagain">TRY AGAIN</string>
+    <string name="deletereminder">Delete Reminder?</string>
+    <string name="noemailclient">No E-Mail client found!</string>
+    <string name="sendemailvia">Send E-Mail via…</string>
+    <string name="setwidgetfontsize">Set widget font size</string>
+    <string name="setappfontsize">Set app font size</string>
+    <string name="makesureyouareconnected">Please make sure you are connected to the internet so that today\'s quote can be received.</string>
+    <string name="connectionerror">Connection Error</string>
+    <string name="configuredaydream">Configure Daydream</string>
+    <string name="language">Language</string>
+    <string name="keepscreenon">Keep screen on</string>
+    <string name="keepscreenondescription">Keeps screen on while the app is open</string>
+    <string name="appfontsize">App font size</string>
+    <string name="appfontsizedescription">Set app quote font size</string>
+    <string name="widgetfontsize">Widget font size</string>
+    <string name="widgetfontsizedescription">Set widget quote font size</string>
+    <string name="imagebackground">Image Background</string>
+    <string name="imagebackgrounddescription">Show image in background</string>
+    <string name="about">About</string>
+    <string name="aboutdescription">What\'s easeWave all about?</string>
+    <string name="contact">Contact</string>
+    <string name="contactdescription">Feedback, suggestions, questions?</string>
+    <string name="checkoutwebsite">Check out the easeWave website!</string>
+    <string name="thoughts">Thoughts</string>
+    <string name="sickness">Disease</string>
+    <string name="introtext3">According to the scientists 87% of all diseases are related to thought patterns.</string>
+    <string name="positivethinking">Positive thinking</string>
+    <string name="introtext4">We can choose to be happy by practicing positive thinking.</string>
+    <string name="inspiration">Inspiration</string>
+    <string name="introtext5">This app helps you to do so! It provides a scripture or quote picked by our little team for each day.</string>
+    <string name="rethink">Rethink</string>
+    <string name="introtext6">By reading the good words, thinking about them and maybe also meditate on them you can plant positive thoughts into your brain.</string>
+    <string name="habit">Habit</string>
+    <string name="chooselanguage">Choose language</string>
+    <string name="restartapp">Restart app?</string>
+    <string name="languagechange">The language change will become effective after the app is restarted.</string>
+    <string name="now">Now</string>
+    <string name="later">Later</string>
+    <string name="configurewidget">Configure Widget</string>
+    <string name="fontsize">Font size</string>
+    <string name="setwidgetfontsize2">Set widget font size *</string>
+    <string name="fontsizehint">* You can always change the widget font size through the app settings without recreating the widget.</string>
+
+    <string-array name="favs_list_array">
+        <item>Export to sd-card</item>
+        <item>Import from sd-card</item>
+        <item>Create List of all Favorites</item>
+    </string-array>
+
+    <array name="navigation">
+        <item name="main">Today\'s Quote</item>
+        <item name="main">Favourites</item>
+        <item name="main">Browse Quotes</item>
+        <item name="main">Reminders</item>
+        <item name="main">Submit Quote</item>
+        <item name="main">Settings</item>
+    </array>
+
+    <string name="todaysquote">Today\'s Quote</string>
+    <string name="favorites">Favorites</string>
+    <string name="browsequotes">Browse Quotes</string>
+    <string name="reminders">Reminders</string>
+    <string name="submitquote">Submit Quote</string>
+    <string name="settings">Settings</string>
+
+    <string name="introtext1">Our happiness depends on our thoughts.</string>
+    <string name="introtext2">We have about 60.000 thoughts a day.\n\nBut only 3% of them are constructive/positive!</string>
+    <string name="introtext7">\"Our happiness depends on the habit of mind we cultivate. So practice happy thinking every day. Cultivate the merry heart, develop the happiness habit, and life will become a continual feast.\"</string>
+    <string name="nofavsfound">No favourites found!</string>
+    <string name="more">More</string>
+    <string name="lockscreenwidgetfontsize">Lockscreen Widget font size</string>
+    <string name="lockscreenwidgetfontsizesum">Set lockscreen widget quote font size</string>
+    <string name="centerwidgettext">Center Widget Text</string>
+    <string name="setwidgetlayout">Set widget layout</string>
+    <string name="centertext">Center Text</string>
+    <string name="addtofavs">Add to favorites</string>
+    <string name="shareasimage">Share as Image</string>
+    <string name="errorreceivingringtone">Error receiving ringtone!</string>
+    <string name="nodefaultringtone">No default ringtone!</string>
+    <string name="showlog">show log</string>
+    <string name="hidelog">hide log</string>
+    <string name="unabletoreceiveerrorlog">Unable to receive error log.</string>
+    <string name="weresorry">I\'m sorry…</string>
+    <string name="crashreportermessage">An error occorred. Sending me the log would really help me to fix the problem. Thanks!</string>
+    <string name="sendlog">Send Log</string>
+    <string name="sort">Sort</string>
+    <string name="sortby">Sort by</string>
+    <string name="dateadded">Date added</string>
+    <string name="author">Author</string>
+    <string name="easewavebugreport">easeWave Bug Report</string>
+    <string name="easewavejustcrashed">Hi, easeWave just crashed. Please take a look!\n\n</string>
+
+</resources>

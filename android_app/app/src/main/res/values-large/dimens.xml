@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="navigation_drawer_width">340dp</dimen>
+    <dimen name="nav_list_padding">20dp</dimen>
+    <dimen name="appfontsize">26sp</dimen>
+    <dimen name="widgetfontsize">18sp</dimen>
+    <dimen name="lockscreenwidgetfontsize">20sp</dimen>
+    <dimen name="carddemo_shadow_elevation">2sp</dimen>
+    <dimen name="card_margin_leftright">20dp</dimen>
+    <dimen name="card_base_empty_height">0dp</dimen>
+    <dimen name="font14">24sp</dimen>
+    <dimen name="font16">26sp</dimen>
+    <dimen name="font18">30sp</dimen>
+    <dimen name="font28">35sp</dimen>
+
+</resources>
